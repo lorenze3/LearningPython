@@ -6,7 +6,7 @@ import os
 
 def fileList(folder='c:\\', date=datetime.date.today()):
     """
-    Generates list of files from a folder modified after date
+    Generates list of files from a folder (and subfolders) modified after date
     
     Parameters
     __________

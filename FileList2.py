@@ -17,7 +17,7 @@ def fileList(folder='c:\\', date=datetime.date.today()):
         default is today
     Returns 
     ________
-    filesList:dictionary
+    filesList: dictionary
      a dictionary where each filename by absolute path
     is the key to the date modified value.
     
@@ -28,7 +28,7 @@ def fileList(folder='c:\\', date=datetime.date.today()):
     . . .          ,
      "<last file>"]
     
-    Test on a directory with few subfoldres
+    Test on a directory with few subfolders
     
     @author: lorete01
     """

@@ -42,6 +42,7 @@ def fileList(folder='c:\\', date=datetime.date.today()):
             filesList += [root + '\\' + file] 
             for ff in filesList:
                 #for each file add it to filesDate (a dict) iff getmtime>=date
-                filesDate[ff]=datetime.date.fromtimestamp(os.path.getmtime(ff))
+                if datetime.date.fromtimestamp(os.path.getmtime(ff))>=date:
+                    filesDate[ff]=datetime.date.fromtimestamp(os.path.getmtime(ff))
     return filesDate
     #return filesList

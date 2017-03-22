@@ -21,8 +21,9 @@ def zipThese(paths, archive='C:\\NewZip.zip'):
     Returns
     ________
     None
-    Example
-    _______
+    
+    Example:
+    ________
     > zipThese(['c:\\temp\\ls.txt'],archive="c:\\temp\\TrialZip.zip")
     
     Note that, if passed aboslute paths in paths list, the zip archive

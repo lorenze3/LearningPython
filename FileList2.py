@@ -4,7 +4,7 @@ import datetime
 import os
 
 
-def fileList(folder='c:\\', date=datetime.date.today()):
+def fileList(folder='c:\\', date=datetime.date.today()+datetime.timedelta(-30)):
     """
     Generates list of files from a folder (and subfolders) modified after date
     
@@ -14,7 +14,7 @@ def fileList(folder='c:\\', date=datetime.date.today()):
         a path name to be used as root of the search
     date: date
         only files modified on or after this date will be kept in the list
-        default is today
+        default is 30 days before today()
     Returns 
     ________
     filesList: dictionary

@@ -18,7 +18,7 @@ def sendArchiveMsg(toaddr='lorenze3@gmail.com', status='Success',
     msg['To'] = toaddr
     with open(attachment) as att:
         att_data = att.read()
-    msg.add_attachment(att_data,filename=attachment)
+    msg.add_attachment(att_data, filename=attachment)
     gmail = smtplib.SMTP('smtp.gmail.com', port=587)
     gmail.ehlo()
     gmail.starttls()

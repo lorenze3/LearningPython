@@ -2,7 +2,7 @@
 """
 Created on Thu Mar 23 14:46:10 2017
 
-@author: lorete01
+stole this whole hog from https://www.withoutthesarcasm.com/using-amazon-glacier-for-personal-backups/
 """
 
 from boto.glacier.layer1 import Layer1
